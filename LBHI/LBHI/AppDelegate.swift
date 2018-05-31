@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  LBHI
 //
-//  Created by Jean Fredo Louis on 5/31/18.
+//  Created by Janette Vazquez on 5/31/18.
 //  Copyright © 2018 com.example. All rights reserved.
 //
 
