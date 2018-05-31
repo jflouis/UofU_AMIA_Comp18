@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  LBHI
+//  Location-Based Health Information
 //
-//  Created by Janette Vazquez on 5/31/18.
+//  Created by Janette Vazquez & Jean Frédo Louis on 5/31/18.
 //  Copyright © 2018 com.example. All rights reserved.
 //
 
