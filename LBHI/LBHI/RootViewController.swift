@@ -12,7 +12,13 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
 
     var pageViewController: UIPageViewController?
 
-
+    @IBOutlet weak var txtFname: UITextField!
+    @IBOutlet weak var txtPwd: UITextField!
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtACode: UITextField!
+    @IBOutlet weak var txtDoB: UITextField!
+    @IBOutlet weak var txtLName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -85,6 +91,60 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         return .mid
     }
 
+    
+    
+    //stsart coding for registration
+    @IBAction func btnRegistration(sender:AnyObject)
+    {
+        if(countElements(txtFname.text) == 0){
+            var alert : UIAlertView = UIAlertView(title: "Oops!", message: "Please enter your first name.", delegate: nil, cancelButtonTitle: "OK")
+            alert.show()
+        }
+        else if(countElements(txtLname.text) == 0){
+            var alert : UIAlertView = UIAlertView(title: "Oops!", message: "Please enter your last name.", delegate: nil, cancelButtonTitle: "OK")
+            alert.show()
+        }
+        else if(countElements(txtDoB.text) == 0){
+            var alert : UIAlertView = UIAlertView(title: "Oops!", message: "Please enter your Date of Birth.", delegate: nil, cancelButtonTitle: "OK")
+            alert.show()
+        }
+        else if(countElements(txtEmail.text) == 0){
+            var alert : UIAlertView = UIAlertView(title: "Oops!", message: "Please enter your first name.", delegate: nil, cancelButtonTitle: "OK")
+            alert.show()
+        }
+        else if !isValidEmail(txtEmailID.txt){
+            var alert: UIAlertView = UIAlertView(title: "Oops!", message: "Please enter your email ID", delegate: nil, cancelButtonTitle: "OK")
+        alert.show()
+        }
+        else if(countElements(txtACode.text) == 0){
+            var alert : UIAlertView = UIAlertView(title: "Oops!", message: "Please enter your access code.", delegate: nil, cancelButtonTitle: "OK")
+            alert.show()
+        }
+        else if(countElements(txtpwd.text) == 0){
+            var alert : UIAlertView = UIAlertView(title: "Oops!", message: "Please enter a password", delegate: nil, cancelButtonTitle: "OK")
+            alert.show()
+        }
+        else{
+            var alert : UIAlertView = UIAlertView(title: "User REgistration!", message: "Your Registration is successful.", delegate: nil, cancelButtonTitle: "OK" )
+            alert.show()
+        }
+        
+    }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
